@@ -1,0 +1,238 @@
+.JobRoute-bgContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.JobRouteSearchDiv-sm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  border: 1px solid #cbd5e1;
+  width: 90vw;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.JobRouteSearch {
+  height: 40px;
+  width: 90%;
+  background-color: transparent;
+  color: #272727;
+  padding: 5px;
+  border: none;
+  color: white;
+}
+.search-icons {
+  height: 100%;
+  min-width: 25px;
+  color: #7e858e;
+  border: none;
+  margin: 0px;
+  font-size: 70%;
+}
+.search-button {
+  background-color: transparent;
+  border: none;
+  border-left: solid 1px gray;
+}
+.JobRouteListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90vw;
+}
+hr {
+  border: solid 1px white;
+  width: 100%;
+  opacity: 0.5;
+}
+.JobRoute-list-heading {
+  color: white;
+  font-size: 120%;
+  font-weight: 500;
+  line-height: 25px;
+}
+ul {
+  padding: 0px;
+  margin-top: -5px;
+  list-style-type: none;
+}
+.type-label-style {
+  color: white;
+  margin-left: 10px;
+  font-size: 120%;
+}
+li {
+  width: 70vw;
+  margin: 5px;
+  margin-left: 0px;
+}
+.checkbox-style {
+  padding-left: 0px;
+  height: 20px;
+  width: 20px;
+}
+.JobRoute-failureContainer {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.retry-btn {
+  background-color: #4f46e5;
+  color: white;
+  font-size: 100%;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+}
+.jobFailureView {
+  margin-top: 20px;
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: white solid 1px;
+}
+.failureViewStyle {
+  height: 35vh;
+  width: 80vw;
+}
+.failure-heading {
+  color: white;
+  font-size: 120%;
+  font-weight: 500;
+}
+.failure-para {
+  font-weight: 200;
+  width: 80vw;
+  text-align: center;
+}
+.failure-retry-btn {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 100%;
+  font-weight: 500;
+  background-color: #4f46e5;
+  margin-bottom: 20px;
+}
+.profile-to-list-sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.profile-to-list-lg {
+  display: none;
+}
+.JobRouteSearchDiv-lg {
+  display: none;
+}
+
+.rightContainer-lg {
+  display: none;
+}
+
+.jobs-list-container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.noJobContainer {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.noJobImgstyle {
+  height: 250px;
+  width: 100%;
+}
+.noJobsheading {
+  color: white;
+  font-size: 100%;
+  font-weight: 600;
+}
+.no-jobs-para {
+  color: white;
+  font-size: 120%;
+  font-weight: 200;
+  text-align: center;
+  margin-top: -8px;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-to-list-sm {
+    display: none;
+  }
+  .profile-to-list-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 200px;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+  .JobRouteListContainer {
+    width: 30vw;
+  }
+  li {
+    width: 100%;
+  }
+  hr {
+    width: 100%;
+  }
+  .JobRouteSearchDiv {
+    max-width: 60vw;
+  }
+  .JobRoute-bgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .JobRouteSearchDiv-sm {
+    display: none;
+  }
+  .jobSearchList-sm {
+    display: none;
+  }
+  .rightContainer-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .jobs-list-container {
+    max-width: 65vw;
+  }
+  .JobRouteSearchDiv-lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid gray;
+  }
+}

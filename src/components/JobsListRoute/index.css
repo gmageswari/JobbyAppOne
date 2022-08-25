@@ -1,0 +1,155 @@
+.job-container {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.logo-name-container {
+  height: 50px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+.company-log-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+.type-rating-container {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 5px;
+}
+.title-type-style {
+  font-size: 100%;
+  color: white;
+  font-weight: 600;
+  margin-top: 0px;
+}
+.rating-style {
+  width: 50px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3px;
+}
+.star-style {
+  height: 20px;
+  width: 20px;
+  color: #fbbf24;
+}
+.rating {
+  font-size: 100%;
+  color: white;
+  font-weight: 600;
+}
+.location-type-lpa-container {
+  height: 40px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-type-container {
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+.location-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.location-icon-style {
+  color: white;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.location-style {
+  font-size: 90%;
+  color: white;
+  font-weight: 300;
+}
+.package-style {
+  color: white;
+  font-weight: 600;
+  font-size: 100%;
+}
+.lpa-container {
+  width: 70px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.horizontal-line {
+  border: solid 1px white;
+  width: 85vw;
+  opacity: 0.5;
+}
+.description {
+  font-size: 90%;
+  font-weight: 100;
+  color: white;
+  line-height: 20px;
+  margin-top: -5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+.description-heading {
+  color: white;
+  font-size: 100%;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-left: 5px;
+}
+.jobs-link-style {
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .job-container {
+    max-width: 65vw;
+  }
+  .logo-name-container {
+    width: 100%;
+  }
+  .location-type-lpa-container {
+    width: 100%;
+  }
+  .rating-style {
+    margin-top: -8px;
+    width: 40px;
+  }
+  .title-type-style {
+    margin-top: -8px;
+  }
+  .horizontal-line {
+    width: 98%;
+  }
+}

@@ -1,0 +1,68 @@
+.HeaderRoute-bgContainer {
+  height: 8vh;
+  width: 100vw;
+  background-color: #272727;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+.HeaderRouteLogo {
+  max-height: 5vh;
+  max-width: 30vw;
+}
+.HeaderRoute-tabs {
+  height: 5vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.iconStyle {
+  color: white;
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
+}
+.HeaderRoute-home-job-div {
+  display: none;
+}
+.HeaderTabForLg {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .HeaderRoute-tabs {
+    display: none;
+  }
+  .HeaderRoute-home-job-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    min-width: 120px;
+  }
+  .HeaderRoute-link {
+    color: white;
+    font-size: 120%;
+  }
+  .logout-btn {
+    background-color: #6366f1;
+    color: white;
+    font-size: 100%;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    margin-left: 20px;
+  }
+  .HeaderTabForLg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+  }
+}

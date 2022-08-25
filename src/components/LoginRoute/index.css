@@ -1,0 +1,65 @@
+.LoginRoute-bg-container {
+  background-color: black;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.LoginRoute-login-form-container {
+  min-width: 75%;
+  height: 50%;
+  background-color: #272727;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+.LoginRoute-website-logo {
+  height: 20%;
+  width: 40%;
+  align-self: center;
+  margin-bottom: 5%;
+}
+.LoginRoute-label {
+  color: #f8fafc;
+  font-size: 90%;
+  font-weight: 300;
+  margin-bottom: 3%;
+}
+.LoginRoute-inputBox {
+  min-height: 14%;
+  width: 100%;
+  background-color: transparent;
+  border: solid #b6c5ff 1px;
+  border-radius: 4px;
+  margin-bottom: 5%;
+  font-size: 80%;
+  padding: 5px;
+  color: white;
+}
+.LoginRoute-login-btn {
+  background-color: #4f46e5;
+  color: white;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 100%;
+  font-weight: 400;
+}
+.errorMsgStyle {
+  color: #ff0b37;
+  font-size: 70%;
+}
+@media screen and (min-width: 768px) {
+  .LoginRoute-login-form-container {
+    min-height: 300px;
+    min-width: 400px;
+  }
+}

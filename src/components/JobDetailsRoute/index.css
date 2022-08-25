@@ -1,0 +1,264 @@
+.JobDetailsRoute-bgContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 20px;
+}
+
+.JobDetailsRoute-eachJobDetails {
+  width: 95vw;
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.JobsDetailsRoute-logo-type-rating-div {
+  width: 90vw;
+  height: 70px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.JobsDetailsRoute-company-logo {
+  height: 80%;
+  width: 14vw;
+  border-radius: 3px;
+}
+
+.JobsDetailsRoute-type-rating-div {
+  height: 100%;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.JobsDetailsRoute-type-style {
+  color: white;
+  font-size: 120%;
+  font-weight: 500;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.JobsDetailsRoute-rating-div {
+  height: 30px;
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.JobsDetailsRoute-star-style {
+  height: 20px;
+  width: 20px;
+  color: #fbbf24;
+}
+
+.JobsDetailsRoute-rating-style {
+  color: white;
+  font-size: 120%;
+  font-weight: 500;
+  height: 30px;
+  margin-top: -5px;
+}
+
+.JobsDetailsRoute-location-type-lpa-div {
+  height: 40px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.JobsDetailsRoute-location-type-div {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.JobsDetailsRoute-location-style {
+  color: white;
+  font-size: 100%;
+  font-weight: 200;
+}
+.JobsDetailsRoute-location-icon-style {
+  color: white;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.JobsDetailsRoute-location-div {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.JobsDetailsRoute-lpa-div {
+  width: 70px;
+  height: 90%;
+  font-size: 80%;
+  padding-top: 3px;
+}
+hr {
+  width: 90vw;
+  border: solid 1px white;
+}
+.JobsDetailsRoute-description-visit-div {
+  height: 40px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.JobsDetailsRoute-description-style {
+  color: white;
+  font-size: 110%;
+  font-weight: 600;
+  width: 50%;
+  align-self: flex-start;
+}
+.JobsDetailsRoute-visit-div {
+  height: 100%;
+  width: 50%;
+  color: #6366f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.visit-button-style {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  border: none;
+  align-self: flex-end;
+}
+.JobsDetailsRoute-visit-style {
+  color: #6366f1;
+  font-size: 130%;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.link-style {
+  height: 20px;
+  width: 20px;
+  color: #6366f1;
+}
+.visit-icon-div {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  align-self: flex-end;
+}
+.JobsDetailsRoute-job-description-style {
+  color: white;
+  font-size: 106%;
+  line-height: 25px;
+  width: 90vw;
+  font-weight: 300;
+}
+.margin-class {
+  margin-left: 2.5vw;
+}
+.JobsDetailsRoute-skill-div {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.JobsDetailsRoute-each-skill-div {
+  height: 70px;
+  width: 45%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.each-skill-image {
+  height: 50px;
+  width: 13vw;
+}
+.JobsDetailsRoute-skill-name-style {
+  color: white;
+  font-size: 110%;
+  font-weight: 400;
+  width: 65%;
+  align-self: flex-start;
+  margin-left: 15px;
+}
+.JobsDetailsRoute-lac-description-style {
+  color: white;
+  font-size: 106%;
+  line-height: 25px;
+  width: 90vw;
+  font-weight: 300;
+}
+.lac-image {
+  height: 30vh;
+  width: 90vw;
+  border-radius: 10px;
+}
+.JobsDetailsRoute-similar-job-style {
+  color: white;
+  font-size: 150%;
+  font-weight: 600;
+  width: 50%;
+  align-self: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .JobsDetailsRoute-each-skill-div {
+    width: 20%;
+  }
+  .each-skill-image {
+    max-width: 25%;
+  }
+  .JobsDetailsRoute-company-logo {
+    max-width: 60px;
+  }
+  .JobsDetailsRoute-lac-div {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .JobsDetailsRoute-lac-description-style {
+    width: 55vw;
+    line-height: 35px;
+    font-size: 130%;
+    align-self: flex-start;
+  }
+  .lac-image {
+    max-width: 400px;
+  }
+}
+
+* {
+  border: 1px solid white;
+}
