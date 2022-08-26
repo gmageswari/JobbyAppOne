@@ -6,6 +6,7 @@
   align-items: center;
   width: 100vw;
   padding-bottom: 20px;
+  min-height: 100vh;
 }
 
 .JobDetailsRoute-eachJobDetails {
@@ -231,6 +232,29 @@ hr {
   width: 50%;
   align-self: flex-start;
 }
+.JobsDetailsRoute-similar-jobs-container {
+  width: 95vw;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.jobDetailsRoute-failure-div {
+  height: 500px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failureViewStyle {
+  height: 200px;
+  width: 270px;
+}
 @media screen and (min-width: 768px) {
   .JobsDetailsRoute-each-skill-div {
     width: 20%;
@@ -257,8 +281,4 @@ hr {
   .lac-image {
     max-width: 400px;
   }
-}
-
-* {
-  border: 1px solid white;
 }

@@ -15,11 +15,14 @@ const HeaderRoute = props => {
 
   return (
     <div className="HeaderRoute-bgContainer">
-      <img
-        src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-        alt="website logo"
-        className="HeaderRouteLogo"
-      />
+      <Link to="/">
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+          alt="website logo"
+          className="HeaderRouteLogo"
+        />
+      </Link>
+
       <div className="HeaderRoute-tabs">
         <AiFillHome className="iconStyle" />
         <Link to="/jobs">
@@ -29,17 +32,24 @@ const HeaderRoute = props => {
         <FiLogOut className="iconStyle" onClick={logoutClicked} />
       </div>
       <div className="HeaderTabForLg">
-        <div className="HeaderRoute-home-job-div">
+        <ul className="HeaderRoute-home-job-div">
           <Link to="/" className="jobs-link-style">
-            <p className="HeaderRoute-link">Home</p>
+            <li className="HeaderRoute-link">Home</li>
           </Link>
           <Link to="/jobs" className="jobs-link-style">
-            <p className="HeaderRoute-link">Jobs</p>
+            <li className="HeaderRoute-link">Jobs</li>
           </Link>
-        </div>
-        <button type="button" className="logout-btn" onClick={logoutClicked}>
-          Logout
-        </button>
+
+          <li>
+            <button
+              type="button"
+              className="logout-btn"
+              onClick={logoutClicked}
+            >
+              Logout
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
   )

@@ -18,7 +18,7 @@ const JobsListRoute = props => {
   } = eachJob
   return (
     <Link to={`/jobs/${id}`} className="jobs-link-style">
-      <li className="job-container">
+      <li className="job-container" key={id}>
         <div className="logo-name-container">
           <img
             src={CompanyLogoUrl}

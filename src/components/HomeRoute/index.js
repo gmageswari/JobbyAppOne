@@ -1,16 +1,14 @@
+import {Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import HeaderRoute from '../HeaderRoute'
 
 import './index.css'
 
 const HomeRoute = props => {
-  const findJobsClicked = () => {
+  const jwtToken = Cookies.get('jwt_token')
+  if (jwtToken === undefined) {
     const {history} = props
-    if (Cookies.get('jwt_token') !== undefined) {
-      history.push('/jobs')
-    } else {
-      history.replace('/login')
-    }
+    history.replace('/login')
   }
 
   return (
@@ -21,9 +19,11 @@ const HomeRoute = props => {
         Millions of people are searching for jobs, salary information, company
         reviews. Find the job that fits your abilities and potential.
       </p>
-      <button type="button" className="find-jobs-btn" onClick={findJobsClicked}>
-        Find Jobs
-      </button>
+      <Link to="/jobs">
+        <button type="button" className="find-jobs-btn">
+          Find Jobs
+        </button>
+      </Link>
     </div>
   )
 }

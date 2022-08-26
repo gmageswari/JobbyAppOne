@@ -1,0 +1,138 @@
+.SimilarJobsRoute-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #272727;
+  border-radius: 10px;
+}
+
+.SimilarJobsRoute-logo-title-rating-div {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.SimilarJobsRoute-logo-style {
+  height: 60px;
+  width: 50px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.SimilarJobsRoute-title-rating-div {
+  width: 200px;
+  height: 100%;
+}
+
+.SimilarJobsRoute-title-style {
+  color: white;
+  font-size: 120%;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.SimilarJobsRoute-rating-div {
+  width: 40px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SimilarJobsRoute-rating-star-style {
+  height: 20px;
+  width: 20px;
+  color: #fbbf24;
+}
+
+.SimilarJobsRoute-rating-style {
+  color: white;
+  font-size: 120%;
+  font-weight: 500;
+  margin-top: 17px;
+}
+
+.SimilarJobsRoute-description-style {
+  color: white;
+  font-size: 110%;
+  font-weight: 500;
+  width: 90%;
+}
+
+.SimilarJobsRoute-description {
+  color: white;
+  font-size: 110%;
+  width: 90%;
+  font-weight: 200;
+  height: 200px;
+  margin-top: -10px;
+  opacity: 0.8;
+}
+
+.SimilarJobsRoute-location-type-div {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.SimilarJobRoute-location-style {
+  height: 23px;
+  width: 20px;
+  color: white;
+  margin-top: 3px;
+}
+
+.SimilarJobsRoute-location-div {
+  height: 100%;
+  min-width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.SimilarJobsRoute-location {
+  color: white;
+  font-size: 120%;
+  font-weight: 300;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.view-more-button {
+  color: white;
+  font-size: 100%;
+  font-weight: 500;
+  background-color: #6366f1;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+  align-self: flex-end;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.link-style-now {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .SimilarJobsRoute-div {
+    width: 30%;
+    margin-right: 3%;
+  }
+}

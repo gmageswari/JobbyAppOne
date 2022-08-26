@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import './index.css'
 
@@ -18,9 +19,12 @@ class LoginRoute extends Component {
   }
 
   credentialValid = validData => {
-    const jwtToken = validData.jwt_token
-    Cookies.set('jwt_token', jwtToken)
     const {history} = this.props
+    const jwtToken = validData.jwt_token
+    Cookies.set('jwt_token', jwtToken, {
+      expires: 30,
+    })
+
     history.replace('/')
   }
 
@@ -51,7 +55,12 @@ class LoginRoute extends Component {
   }
 
   render() {
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
     const {username, password, errorMsg} = this.state
+
     return (
       <div className="LoginRoute-bg-container">
         <form
@@ -70,8 +79,8 @@ class LoginRoute extends Component {
             type="text"
             placeholder="Username"
             className="LoginRoute-inputBox"
-            value={username}
             onChange={this.updateUsername}
+            value={username}
           />
           <label className="LoginRoute-label" htmlFor="passwordId">
             PASSWORD
@@ -80,8 +89,8 @@ class LoginRoute extends Component {
             type="password"
             placeholder="Password"
             className="LoginRoute-inputBox"
-            value={password}
             onChange={this.updatePassword}
+            value={password}
           />
           <button type="submit" className="LoginRoute-login-btn">
             Login
