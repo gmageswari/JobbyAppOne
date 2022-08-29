@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import {AiFillStar} from 'react-icons/ai'
@@ -24,6 +25,7 @@ class JobDetailsRoute extends Component {
   }
 
   componentDidMount() {
+    console.log('Entered details')
     this.getEachJobFullDetails()
   }
 
@@ -130,6 +132,10 @@ class JobDetailsRoute extends Component {
   }
 
   render() {
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken === undefined) {
+      return <Redirect to="/login" />
+    }
     const {eachJobFullDetails, jobDetailsApiStatus, similarJobs} = this.state
     const {
       companyLogoUrl,

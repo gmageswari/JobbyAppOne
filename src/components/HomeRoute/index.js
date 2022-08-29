@@ -1,14 +1,13 @@
-import {Link} from 'react-router-dom'
+import {Link, Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import HeaderRoute from '../HeaderRoute'
 
 import './index.css'
 
-const HomeRoute = props => {
+const HomeRoute = () => {
   const jwtToken = Cookies.get('jwt_token')
   if (jwtToken === undefined) {
-    const {history} = props
-    history.replace('/login')
+    return <Redirect to="/login" />
   }
 
   return (

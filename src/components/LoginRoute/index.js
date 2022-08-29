@@ -29,7 +29,7 @@ class LoginRoute extends Component {
   }
 
   credentialInvalid = errorMsge => {
-    this.setState({errorMsg: errorMsge})
+    this.setState({errorMsg: `*${errorMsge}`})
   }
 
   credentialCheck = async event => {
@@ -77,30 +77,31 @@ class LoginRoute extends Component {
           </label>
           <input
             type="text"
+            id="userId"
             placeholder="Username"
+            value={username}
             className="LoginRoute-inputBox"
             onChange={this.updateUsername}
-            value={username}
           />
           <label className="LoginRoute-label" htmlFor="passwordId">
             PASSWORD
           </label>
           <input
             type="password"
+            id="passwordId"
             placeholder="Password"
+            value={password}
             className="LoginRoute-inputBox"
             onChange={this.updatePassword}
-            value={password}
           />
           <button type="submit" className="LoginRoute-login-btn">
             Login
           </button>
-          {errorMsg !== '' ? (
-            <p className="errorMsgStyle">*{errorMsg}</p>
-          ) : null}
         </form>
+        <p className="errorMsgStyle">{errorMsg}</p>
       </div>
     )
   }
 }
+
 export default LoginRoute

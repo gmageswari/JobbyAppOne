@@ -24,7 +24,9 @@ const HeaderRoute = props => {
       </Link>
 
       <div className="HeaderRoute-tabs">
-        <AiFillHome className="iconStyle" />
+        <Link to="/">
+          <AiFillHome className="iconStyle" />
+        </Link>
         <Link to="/jobs">
           <BsFillBriefcaseFill className="iconStyle" />
         </Link>
